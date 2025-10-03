@@ -1,21 +1,29 @@
-Simple Calculator
+# 3D Distance Calculator
 
-This repository contains a small, safe command-line calculator implemented in `python.py`.
+This script calculates the Euclidean distance between two points in 3D space.
 
-Usage:
+## Usage
 
-Run the REPL:
+1.  Run the script from your terminal:
+    ```bash
+    python python.py
+    ```
 
-```powershell
-python python.py
+2.  Enter the coordinates for the first point when prompted, using a comma-separated format (e.g., `1, 2, 3`).
+
+3.  Enter the coordinates for the second point in the same format.
+
+The script will then print the calculated distance.
+
+### Example
+
 ```
+3D Distance Calculator
+Enter the coordinates for each point as x, y, z
+Enter coordinates for point 1 (e.g., 1, 2, 3): 0, 0, 0
+Enter coordinates for point 2 (e.g., 3, 4, 0): 3, 4, 0
 
-Evaluate a single expression:
-
-```powershell
-python python.py -e "2 + 2 * sin(pi/2)"
+Point 1: (0.0, 0.0, 0.0)
+Point 2: (3.0, 4.0, 0.0)
+Distance: 5.0000
 ```
-
-Notes:
-- The evaluator is intentionally restricted: it only allows numeric constants, basic arithmetic operators, calls to math functions (from the `math` module), and a few safe builtins like `abs` and `round`.
-- Trying to use attribute access, importing, or other Python features will raise an error.
